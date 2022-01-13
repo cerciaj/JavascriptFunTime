@@ -1,0 +1,11 @@
+      /***************************************************************************
+       * Pull the URL apart and set it to the value of the part1ID
+       * *************************************************************************/
+      function getUrlParams() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const part1ID = urlParams.get('part1ID__X4');
+          //console.log(part1ID);
+          document.getElementById('part1ID__X4').setAttribute("value", part1ID);
+          const part2ID = urlParams.get('part2Id');
+          document.getElementById('part2Id').setAttribute("value", part2ID);
+      }
