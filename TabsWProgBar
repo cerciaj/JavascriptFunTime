@@ -1,0 +1,321 @@
+
+<!-- End Run Time Message -->
+<div class="row table-content">
+<div class="mrc-form-width col-xl-8 col-lg-8 col-md-8 col-sm-12"><button class="tablink" id="pt1but" onclick="openPage('part1', this)">Part 1</button><button class="tablink" id="pt2but" onclick="openPage('part2', this)">Part 2</button><button class="tablink" id="pt3but" onclick="openPage('part3', this)">Part 3</button><button class="tablink" id="pt4but" onclick="openPage('part4', this)">Part 4</button><button class="tablink" id="pt5but" onclick="openPage('part5', this)">Part 5</button>
+
+    <div class="row panels tabcontent" id="part1">
+    <div class="col">
+    <div class="card">
+    <div class="card-header">
+<span class="panel-header-title">Panel Title</span>
+</div>
+    <div class="card-block">
+    <div class="form-row">
+    <div class="form-group col-lg-6" style="display: none;"><label class="col-form-label key-label" for="formId">formId</label> 
+<input class="form-control" ${disabled('formId')} id="formId" maxlength="41" name="formId" style="display: block;" title="formId" type="text" value="${row.formId?html}" /></div>
+    <div class="form-group col-lg-6" style="display: none;"><label class="col-form-label key-label" for="incidentId">incidentId</label> 
+<input class="form-control" ${disabled('incidentId')} id="incidentId" maxlength="41" name="incidentId" style="display: block;" title="incidentId" type="text" value="${row.formId?html}" /></div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-6"><label class="col-form-label" for="serviceCenter">serviceCenter</label> 
+<input class="mrcinput form-control" ${disabled('serviceCenter')} id="serviceCenter" name="serviceCenter" size="13" title="serviceCenter" type="text" value="${row.serviceCenter?html}" /></div>
+    <div class="form-group col-lg-6"><label class="col-form-label" for="region">region</label> 
+<input class="mrcinput form-control" ${disabled('region')} id="region" name="region" size="13" title="region" type="text" value="${row.region?html}" /></div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-6"><label class="col-form-label" for="serviceCenterManager">serviceCenterManager</label> 
+<input class="mrcinput form-control" ${disabled('serviceCenterManager')} id="serviceCenterManager" name="serviceCenterManager" size="13" title="serviceCenterManager" type="text" value="${row.serviceCenterManager?html}" /></div>
+    <div class="form-group col-lg-6"><label class="col-form-label" for="serviceCenterManagerPhone">serviceCenterManagerPhone</label> 
+<input class="mrcinput form-control" ${disabled('serviceCenterManagerPhone')} id="serviceCenterManagerPhone" name="serviceCenterManagerPhone" size="13" title="serviceCenterManagerPhone" type="text" value="${row.serviceCenterManagerPhone?html}" /></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row panels tabcontent" id="part2">
+    <div class="col">
+    <div class="card">
+    <div class="card-header">
+<span class="panel-header-title">Panel Title</span>
+</div>
+    <div class="card-block">
+    <div class="form-row">
+    <div class="form-group col-lg-6"><label class="col-form-label" for="dateOfIncident__X4">dateOfIncident</label> 
+<input class="mrcinput form-control date-input" data-format="MM-DD-YYYY" ${disabled('dateOfIncident__X4')} id="dateOfIncident__X4" name="dateOfIncident__X4" size="13" title="dateOfIncident__X4" type="text" value="${row.dateOfIncident__X4?html}" /></div>
+    <div class="form-group col-lg-6"><label class="col-form-label" for="timeIfIncident">timeIfIncident</label> 
+<input class="form-control" ${disabled('timeIfIncident')} id="timeIfIncident" maxlength="16" name="timeIfIncident" style="display: block;" title="timeIfIncident" type="text" value="${row.timeIfIncident?html}" /></div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-6"><label class="col-form-label" for="dateReported__X4">dateReported</label> 
+<input class="mrcinput form-control date-input" data-format="MM-DD-YYYY" ${disabled('dateReported__X4')} id="dateReported__X4" name="dateReported__X4" size="13" title="dateReported__X4" type="text" value="${row.dateReported__X4?html}" /></div>
+    <div class="form-group col-lg-6"><label class="col-form-label" for="timeReported__X4">timeReported</label> 
+<input class="mrcinput form-control" ${disabled('timeReported__X4')} id="timeReported__X4" name="timeReported__X4" size="13" title="timeReported__X4" type="text" value="${row.timeReported__X4?html}" /></div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-6"><label class="col-form-label" for="reportedTo">reportedTo</label> 
+<input class="mrcinput form-control" ${disabled('reportedTo')} id="reportedTo" name="reportedTo" size="13" title="reportedTo" type="text" value="${row.reportedTo?html}" /></div>
+    <div class="form-group col-lg-6"><label class="col-form-label" for="location">location</label> 
+<input class="mrcinput form-control" ${disabled('location')} id="location" name="location" size="13" title="location" type="text" value="${row.location?html}" /></div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-6"><label class="col-form-label" for="CCTV">CCTV</label> 
+<span mrcdropdown="CCTV" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=CCTV&amp;type=list&amp;listtype=quicklistStatic','CCTV','mrcNoText','radio','2',row.CCTV,disabled('CCTV'))}</span>
+</div>
+    <div class="form-group col-lg-6"><label class="col-form-label" for="unknown"></label></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row panels tabcontent" id="part3">
+    <div class="col">
+    <div class="card">
+    <div class="card-header">
+<span class="panel-header-title">Panel Title</span>
+</div>
+    <div class="card-block">
+    <div class="form-row">
+    <div class="form-group col-lg-12"><label class="col-form-label" for="description">description</label>
+<textarea class="form-control" cols="30" ${disabled('description')} id="description" maxlength="500" name="description" rows="5" style="display: block;">${row.description?html}</textarea>
+</div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-4"><label class="col-form-label" for="natureOfIllness">natureOfIllness</label> 
+<span mrcdropdown="natureOfIllness" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=natOfIll&amp;type=list&amp;listtype=quicklistTable','natureOfIllness','mrcNoText','select','1',row.natureOfIllness,disabled('natureOfIllness'))}</span>
+</div>
+    <div class="form-group col-lg-4"><label class="col-form-label" for="accidentType__X7">accidentType</label> 
+<span mrcdropdown="accidentType__X7" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=accidentType&amp;type=list&amp;listtype=quicklistTable','accidentType__X7','mrcNoText','select','1',row.accidentType__X7,disabled('accidentType__X7'))}</span>
+</div>
+    <div class="form-group col-lg-4"><label class="col-form-label" for="bodyParts__X2">bodyParts</label> 
+<span mrcdropdown="bodyParts__X2" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=Body&amp;type=list&amp;listtype=quicklistTable','bodyParts__X2','mrcNoText','select','1',row.bodyParts__X2,disabled('bodyParts__X2'))}</span>
+</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row panels tabcontent" id="part4">
+    <div class="col">
+    <div class="card">
+    <div class="card-header">
+<span class="panel-header-title">Panel Title</span>
+</div>
+    <div class="card-block">
+    <div class="form-row">
+    <div class="form-group col-lg-3"><label class="col-form-label" for="hazard">hazard</label> 
+<span mrcdropdown="hazard" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=Hazards&amp;type=list&amp;listtype=quicklistTable','hazard','mrcNoText','select','1',row.hazard,disabled('hazard'))}</span>
+</div>
+    <div class="form-group col-lg-3"><label class="col-form-label" for="individual">individual</label> 
+<span mrcdropdown="individual" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=Individuals&amp;type=list&amp;listtype=quicklistTable','individual','mrcNoText','select','1',row.individual,disabled('individual'))}</span>
+</div>
+    <div class="form-group col-lg-3"><label class="col-form-label" for="facilities">facilities</label> 
+<span mrcdropdown="facilities" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=facili&amp;type=list&amp;listtype=quicklistTable','facilities','mrcNoText','select','1',row.facilities,disabled('facilities'))}</span>
+</div>
+    <div class="form-group col-lg-3"><label class="col-form-label" for="procedures">procedures</label> 
+<span mrcdropdown="procedures" mrchidden="undefined" mrcsize="100">${Dropdown('TEST.Quicklist?app=procedures&amp;type=list&amp;listtype=quicklistTable','procedures','mrcNoText','select','1',row.procedures,disabled('procedures'))}</span>
+</div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-3"><label class="col-form-label" for="leadership">leadership</label> 
+<span mrcdropdown="leadership" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=Leadership&amp;type=list&amp;listtype=quicklistTable','leadership','mrcNoText','select','1',row.leadership,disabled('leadership'))}</span>
+</div>
+    <div class="form-group col-lg-3"><label class="col-form-label" for="training">training</label> 
+<span mrcdropdown="training" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=training&amp;type=list&amp;listtype=quicklistTable','training','mrcNoText','select','1',row.training,disabled('training'))}</span>
+</div>
+    <div class="form-group col-lg-3"><label class="col-form-label" for="PPE">PPE</label> 
+<span mrcdropdown="PPE" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=PPE&amp;type=list&amp;listtype=quicklistTable','PPE','mrcNoText','select','1',row.PPE,disabled('PPE'))}</span>
+</div>
+    <div class="form-group col-lg-3"><label class="col-form-label" for="otherFactors">otherFactors</label> 
+<span mrcdropdown="otherFactors" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=procedures&amp;type=list&amp;listtype=quicklistTable','otherFactors','mrcNoText','select','1',row.otherFactors,disabled('otherFactors'))}</span>
+</div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-3"><label class="col-form-label" for="communication">communication</label> 
+<span mrcdropdown="communication" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=Comm&amp;type=list&amp;listtype=quicklistTable','communication','mrcNoText','select','1',row.communication,disabled('communication'))}</span>
+</div>
+    <div class="form-group col-lg-3"><label class="col-form-label" for="ergonomics">ergonomics</label> 
+<span mrcdropdown="ergonomics" mrchidden="undefined" mrcsize="undefined">${Dropdown('TEST.Quicklist?app=erg&amp;type=list&amp;listtype=quicklistTable','ergonomics','mrcNoText','select','1',row.ergonomics,disabled('ergonomics'))}</span>
+</div>
+    <div class="form-group col-lg-3"><label class="col-form-label" for="unknown"></label></div>
+    <div class="form-group col-lg-3"><label class="col-form-label" for="unknown"></label></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row panels tabcontent" id="part5">
+    <div class="col">
+    <div class="card">
+    <div class="card-header">
+<span class="panel-header-title">Panel Title</span>
+</div>
+    <div class="card-block">
+    <div class="form-row">
+    <div class="form-group col-lg-6"><label class="col-form-label" for="other_comments">other_comments</label>
+<textarea class="form-control" cols="30" ${disabled('other_comments')} id="other_comments" maxlength="500" name="other_comments" rows="5">${row.other_comments?html}</textarea>
+</div>
+    <div class="form-group col-lg-6"><label class="col-form-label" for="method">method</label>
+<textarea class="form-control" cols="30" ${disabled('method')} id="method" maxlength="500" name="method" rows="5" style="display: block;">${row.method?html}</textarea>
+</div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-6"><label class="col-form-label" for="skills">skills</label>
+<textarea class="form-control" cols="30" ${disabled('skills')} id="skills" maxlength="500" name="skills" rows="5" style="display: block;">${row.skills?html}</textarea>
+</div>
+    <div class="form-group col-lg-6"><label class="col-form-label" for="people">people</label>
+<textarea class="form-control" cols="30" ${disabled('people')} id="people" maxlength="500" name="people" rows="5" style="display: block;">${row.people?html}</textarea>
+</div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-6"><label class="col-form-label" for="equipment">equipment</label>
+<textarea class="form-control" cols="30" ${disabled('equipment')} id="equipment" maxlength="500" name="equipment" rows="5" style="display: block;">${row.equipment?html}</textarea>
+</div>
+    <div class="form-group col-lg-6"><label class="col-form-label" for="environment">environment</label>
+<textarea class="form-control" cols="30" ${disabled('environment')} id="environment" maxlength="500" name="environment" rows="5" style="display: block;">${row.environment?html}</textarea>
+</div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-12"><label class="col-form-label" for="witnesses">witnesses</label>
+<textarea class="form-control" cols="30" ${disabled('witnesses')} id="witnesses" maxlength="500" name="witnesses" rows="5">${row.witnesses?html}</textarea>
+</div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-lg-12">
+    <div class="form-buttons my-2">
+<!-- <#if (page.work_with == 2 || page.work_with == 4) && custom.parm("childadd") != "1"> -->
+<button class="btn backbutton btn-secondary" name="btn_back" onclick="javascript:doBack(this)" type="button"><i class="fa fa-arrow-left"></i> Back</button>
+<!-- </#if> -->
+<!-- <#if page.action_mode?trim != "VVK"> -->
+<button class="accept btn btn-success" id="doneNotdone" name="btn_accept" type="submit"><i class="fa fa-check"></i> Accept</button>
+<!-- </#if> -->
+</div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Begin mrc Footer -->
+<!-- insert footer_user_file="mrc_servlet_foot.html"  here  -->
+<!-- End mrc Footer -->
+</section>
+</main>
+</div>
+</div>
+
+      window.addEventListener("mousemove", formFilled);
+      function formFilled() {
+          console.log(pt1Filled());
+          console.log(pt2Filled());
+          console.log(pt3Filled());
+          console.log(pt4Filled());
+          console.log(pt5Filled());
+          if (pt1Filled() == true) {
+              document.getElementById("pt1but").setAttribute("style", "background-color: green;");
+          } else {
+              document.getElementById("pt1but").setAttribute("style", "background-color: #555;");
+          }
+          if (pt2Filled() == true) {
+              document.getElementById("pt2but").setAttribute("style", "background-color: green;");
+          } else {
+              document.getElementById("pt2but").setAttribute("style", "background-color: #555;");
+          }
+          if (pt3Filled() == true) {
+              document.getElementById("pt3but").setAttribute("style", "background-color: green;");
+          } else {
+              document.getElementById("pt3but").setAttribute("style", "background-color: #555;");
+          }
+          if (pt4Filled() == true) {
+              document.getElementById("pt4but").setAttribute("style", "background-color: green;");
+          } else {
+              document.getElementById("pt4but").setAttribute("style", "background-color: #555;");
+          }
+          if (pt5Filled() == true) {
+              document.getElementById("pt5but").setAttribute("style", "background-color: green;");
+          } else {
+              document.getElementById("pt5but").setAttribute("style", "background-color: #555;");
+          }
+          if (pt1Filled() == true && pt2Filled() == true && pt3Filled() == true && pt4Filled() == true && pt5Filled() == true) {
+              document.getElementById("doneNotdone").innerHTML = "Submit"
+          } else {
+              document.getElementById("doneNotdone").innerHTML = "Save"
+          }
+      }
+      //check part 1 filed (same for parts 1 - 5)
+      function pt1Filled() {
+          var fields = document.getElementById("FORM_M00140").elements;
+          for (var i = 0; i < 6; i++) {
+              if(fields[i].value === "") {
+                  return false;
+              }
+         }
+         return true;
+      }
+      function pt2Filled() {
+          var fields = document.getElementById("FORM_M00140").elements;
+          for (var i = 6; i < 14; i++) {
+               if (fields[i].value === "") {
+                  return false;
+              }  
+         }
+         return true;
+      }
+      function pt3Filled() {
+          var fields = document.getElementById("FORM_M00140").elements;
+          for (var i = 14; i < 18; i++) {
+             if (fields[i].value === "") {
+                  return false;
+              } 
+         }
+         return true
+      }
+      function pt4Filled() {
+          var fields = document.getElementById("FORM_M00140").elements;
+          for (var i = 18; i < 28; i++) {
+             if (fields[i].value === "") {
+                  return false;
+              } 
+         }
+         return true
+      }
+      function pt5Filled() {
+          var fields = document.getElementById("FORM_M00140").elements;
+          for (var i = 27; i < 35; i++) {
+             if (fields[i].value === "") {
+                  return false;
+              } 
+         }
+         return true
+      }
+      function openPage(pageName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        // Show the specific tab content
+        document.getElementById(pageName).style.display = "block";
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+      }
+// Get the element with id="defaultOpen" and click on it
+        document.getElementById("pt1but").click(); 
+    </script>
+<!-- End mrc_page_root_table-->
+<!-- page.debugInfo -->
+<!-- page.catchedInfo -->
+</body>
+</html>
