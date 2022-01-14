@@ -1,4 +1,4 @@
-
+<!-- Copyright Andrei Cerci (acerci@vioc.net), January, 2022 -->
 <!-- End Run Time Message -->
 <div class="row table-content">
 <div class="mrc-form-width col-xl-8 col-lg-8 col-md-8 col-sm-12"><button class="tablink" id="pt1but" onclick="openPage('part1', this)">Part 1</button><button class="tablink" id="pt2but" onclick="openPage('part2', this)">Part 2</button><button class="tablink" id="pt3but" onclick="openPage('part3', this)">Part 3</button><button class="tablink" id="pt4but" onclick="openPage('part4', this)">Part 4</button><button class="tablink" id="pt5but" onclick="openPage('part5', this)">Part 5</button>
