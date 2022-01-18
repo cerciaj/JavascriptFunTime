@@ -181,6 +181,9 @@
 </div>
 
 <script type="text/javascript">
+    /********************************************************************
+    * Andrei Cerci (andreicerci@gmail.com) 20221801
+    ********************************************************************/
     window.onload = function () {
         document.getElementById("download").addEventListener("click", () => {
              var element = document.getElementById("form");
