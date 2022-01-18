@@ -1,0 +1,200 @@
+<div class="single-row-maintainer single-row-retrieval form-layout form-labels-xl-right form-vertical col-12" id="form" style="padding: 0px; margin: auto; width:90%">
+<div class="card">
+<div class="form-row">
+<div class="form-group col-lg-12" style="border: 1px solid #3a6ea7; background-color: #3a6ea7; color: white;">
+<div class="form-control form-control-plaintext" style="text-align: center;">
+<span style="color:#ffffff;"> 
+<span style="font-size:18px;">Incident Report Store: ${row.serviceCenter?html} ${row.incidentId?html}</span>
+ </span>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-12" style="border: 1px solid #3a6ea7; background-color: #3a6ea7; color: white;">
+<div class="form-control form-control-plaintext" style="text-align: center;">
+<span style="color:#ffffff;"> 
+<span style="font-size:18px;">Part 1</span>
+ </span>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="serviceCenter">Service Center</label>
+<div class="form-control form-control-plaintext">${row.serviceCenter?html}</div>
+</div>
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="region">Region</label>
+<div class="form-control form-control-plaintext">${row.region?html}</div>
+</div>
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="serviceCenterManager">Service Center Manager</label>
+<div class="form-control form-control-plaintext">${row.serviceCenterManager?html}</div>
+</div>
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="serviceCenterManagerPhone">Service Center Manager Phone</label>
+<div class="form-control form-control-plaintext">${row.serviceCenterManagerPhone?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-12" style="border: 1px solid #3a6ea7; background-color: #3a6ea7; color: white;">
+<div class="form-control form-control-plaintext" style="text-align: center;">
+<span style="color:#ffffff;"> 
+<span style="font-size:18px;">Part 2</span>
+ </span>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="dateOfIncident__X4">Date of Incident</label>
+<div class="form-control form-control-plaintext">${row.dateOfIncident__X4?html}</div>
+</div>
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="timeIfIncident">Time of Incident</label>
+<div class="form-control form-control-plaintext">${row.timeIfIncident?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="dateReported__X4">Date Reported</label>
+<div class="form-control form-control-plaintext">${row.dateReported__X4?html}</div>
+</div>
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="timeReported__X4">Time Reported</label>
+<div class="form-control form-control-plaintext">${row.timeReported__X4?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-4" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="reportedTo">Reported To</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.reportedTo?html}</div>
+</div>
+<div class="form-group col-lg-4" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="location">Location</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.location?html}</div>
+</div>
+<div class="form-group col-lg-4" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="CCTV">CCTV</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.CCTV?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-12" style="border: 1px solid #3a6ea7; background-color: #3a6ea7; color: white;">
+<div class="form-control form-control-plaintext" style="text-align: center;">
+<span style="color:#ffffff;"> 
+<span style="font-size:18px;">Part 3</span>
+ </span>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-12" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="description">Description</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.description?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-4" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="natureOfIllness">Nature of Illness</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.natureOfIllness?html}</div>
+</div>
+<div class="form-group col-lg-4" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="accidentType__X7">Accident Type</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.accidentType__X7?html}</div>
+</div>
+<div class="form-group col-lg-4" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="bodyParts__X2">Body Parts</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.bodyParts__X2?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-12" style="border: 1px solid #3a6ea7; background-color: #3a6ea7; color: white;">
+<div class="form-control form-control-plaintext" style="text-align: center;">
+<span style="color:#ffffff;"> 
+<span style="font-size:18px;">Part 4</span>
+ </span>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="hazard">Hazard</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.hazard?html}</div>
+</div>
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="individual">Individual</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.individual?html}</div>
+</div>
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="facilities">Facilities</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.facilities?html}</div>
+</div>
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="leadership">Leadership</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.leadership?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="training">Training</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.training?html}</div>
+</div>
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="PPE">PPE</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.PPE?html}</div>
+</div>
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="procedures">Procedures</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.procedures?html}</div>
+</div>
+<div class="form-group col-lg-3" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="otherFactors">Other Factors</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.otherFactors?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="communication">Communication</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.communication?html}</div>
+</div>
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="ergonomics">Ergonomics</label>
+<div class="form-control form-control-plaintext" style="display: block; white-space: normal;">${row.ergonomics?html}</div>
+</div>
+</div>
+<div class="form-row" id="part5">
+<div class="form-group col-lg-12" style="border: 1px solid #3a6ea7; background-color: #3a6ea7; color: white;">
+<div class="form-control form-control-plaintext" style="text-align: center;">
+<span style="color:#ffffff;"> 
+<span style="font-size:18px;">Part 5</span>
+ </span>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="other_comments">Other Comments</label>
+<div class="form-control form-control-plaintext">${row.other_comments?html}</div>
+</div>
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="method">Method</label>
+<div class="form-control form-control-plaintext">${row.method?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="skills">Skills</label>
+<div class="form-control form-control-plaintext">${row.skills?html}</div>
+</div>
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="people">People</label>
+<div class="form-control form-control-plaintext">${row.people?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="equipment">Equipment</label>
+<div class="form-control form-control-plaintext">${row.equipment?html}</div>
+</div>
+<div class="form-group col-lg-6" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="environment">Environment</label>
+<div class="form-control form-control-plaintext">${row.environment?html}</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-lg-12" style="border: 1px solid #3a6ea7;"><label class="col-form-label" for="witnesses">Witnesses</label>
+<div class="form-control form-control-plaintext">${row.witnesses?html}</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        document.getElementById("download").addEventListener("click", () => {
+             var element = document.getElementById("form");
+             var opt = {
+                margin: [.25, 0, 0, 0], //top, left, buttom, right,
+                filename: 'IR${row.serviceCenter?html}_${row.incidentId?html}.pdf',
+                image: {type: 'jpeg',quality: 0.98},
+                html2canvas: {dpi: 192, scale: 2, letterRendering: true},
+                pagebreak: {mode: 'avoid-all'},
+                jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
+            };
+            var worker = html2pdf();
+            console.log(worker);
+            worker.set(opt).from(element).toPdf().get('pdf').save();  
+        })
+    }
+</script>
