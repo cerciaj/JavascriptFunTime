@@ -1,3 +1,6 @@
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
+
 <div class="single-row-maintainer single-row-retrieval form-layout form-labels-xl-right form-vertical col-12" id="form" style="padding: 0px; margin: auto; width:90%">
 <div class="card">
 <div class="form-row">
